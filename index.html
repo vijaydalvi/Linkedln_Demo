@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedln</title>
+    <link rel="stylesheet" href="style.css">
+
+    <body>
+
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+                <div class="search-box">
+                    <img src="images/search.png" alt="search">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="navbar-center">
+                <ul>
+                    <li>
+                        <a href="#" class="active-link"><img src="images/home.png" alt="nav-img"><span>Home</span></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><img src="images/network.png" alt="nav-img"><span>My Network</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/jobs.png" alt="nav-img"><span>Jobs</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/message.png" alt="nav-img"><span>Messaging</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/notification.png" alt="nav-img"><span>Notifications</span></a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="navbar-right">
+                <div class="online">
+                    <img src="images/user-1.png" alt="user" class="nav-profile-img" onclick="toggleMenu()">
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <!-- ------profile---dropdown---menu--- -->
+
+
+            <div class="profile-menu-wrap" id="profile-Menu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="images/user-1.png" alt="user">
+                        <div>
+                            <h3>
+                                Vijay Dalvi
+
+
+
+                            </h3>
+                            <a href="profile.html">See Your Profile</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <hr>
+                    <a href="#" class="profile-menu-link">
+
+                        <img src="images/feedback.png" alt="feed">
+                        <p>Give Feedback</p>
+                        <span> > </span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+
+                        <img src="images/setting.png" alt="feed">
+                        <p>Settings & Privacy</p>
+                        <span> >  </span>
+                    </a>
+
+
+
+                    <a href="#" class="profile-menu-link">
+
+                        <img src="images/help.png" alt="help">
+                        <p>Help & Support</p>
+                        <span> > </span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+
+                        <img src="images/display.png" alt="display">
+                        <p>Display & Accessiblity</p>
+                        <span> >  </span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+
+                        <img src="images/logout.png" alt="log">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+
+
+
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- ------------navbar---end--- -->
+
+        <div class="container">
+
+            <!-- ---left--side--bar--- -->
+            <div class="left-sidebar">
+
+                <div class="sidebar-profile-box">
+                    <img src="images/cover-pic.png" alt="cover" width="100%">
+                    <div class="sidebar-profile-info">
+                        <img src="images/user-1.png" alt="user">
+                        <h1>Vijay Dalvi</h1>
+                        <h3>Web Developer</h3>
+                        <ul>
+                            <li>Your Profile Views<span>67</span></li>
+                            <li>Your Post Views<span>57</span></li>
+                            <li>Your Connections <span>50</span></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-profile-link">
+
+                        <a href="#"><img src="images/items.png" alt="item">My items</a>
+                        <a href="#"><img src="images/premium.png" alt="premius">Try Premium</a>
+
+                    </div>
+
+
+                </div>
+                <div class="sidebar-activity" id="sidebarActivity">
+                    <h3>RECENT</h3>
+                    <a href="#"><img src="images/recent.png" alt="recent">Web Development</a>
+                    <a href="#"><img src="images/recent.png" alt="recent">User Interface</a>
+                    <a href="#"><img src="images/recent.png" alt="recent">Online Learning</a>
+                    <a href="#"><img src="images/recent.png" alt="recent">Learn Online</a>
+                    <a href="#"><img src="images/recent.png" alt="recent">Code Better</a>
+                    <a href="#"><img src="images/recent.png" alt="recent">Group Learning</a>
+
+                    <h3>GROUPS</h3>
+                    <a href="#"><img src="images/group.png" alt="recent">Web Design Grop</a>
+                    <a href="#"><img src="images/group.png" alt="recent">HTML & CSS Learners</a>
+                    <a href="#"><img src="images/group.png" alt="recent">Python & JavaScript Group</a>
+                    <a href="#"><img src="images/group.png" alt="recent">Learn Coding Online</a>
+                    <h3>HASHTAG</h3>
+                    <a href="#"><img src="images/hashtag.png" alt="recent">Webdevelopment</a>
+
+                    <a href="#"><img src="images/hashtag.png" alt="recent">Userinterface</a>
+                    <a href="#"><img src="images/hashtag.png" alt="recent">Onlinelearning</a>
+                    <div class="discover-more-link">
+                        <a href="#">Discover more</a>
+                    </div>
+                </div>
+
+                <p id="showMoreLink" onclick="toggleActivity()">Show More <b>+</b></p>
+
+            </div>
+
+            <!-- ---main-content---- -->
+            <div class="main-content">
+
+                <div class="create-post">
+                    <div class="create-post-input">
+                        <img src="images/user-1.png" alt="user">
+                        <textarea row="2" placeholder="Write a post"></textarea>
+                    </div>
+
+
+                    <div class="create-post-links">
+
+                        <li><img src="images/photo.png" alt="photo">Photo</li>
+                        <li><img src="images/video.png" alt="photo">Video</li>
+                        <li><img src="images/event.png" alt="photo">Event</li>
+                        <li>Post</li>
+                    </div>
+
+                </div>
+                <div class="sort-by">
+                    <hr>
+                    <p>Sort By:<span>Top <img src="images/down-arrow.png" alt="down"></span></p>
+                </div>
+                <div class="post">
+                    <div class="post-author">
+                        <img src="images/user-3.png" alt="user">
+                        <div>
+                            <h1> Rahul Dalvi</h1>
+                            <small> Founder And CEO </small>
+                            <small>2 Hours Ago</small>
+
+                        </div>
+
+
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos quis optio magnam voluptatum commodi numquam praesentium qui laborum delectus ullam eaeum sunt in, esse corrupti officia optio!
+                    </p>
+                    <img src="images/post-image-1.png" alt="post" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png" alt="th">
+                            <img src="images/love.png" alt="th">
+                            <img src="images/clap.png" alt="th">
+                            <span class="liked-users">Vijay Dalvi And 75 Others</span>
+
+                        </div>
+                        <div>
+
+                            <span>33 Comments &middot; 50 Shares</span>
+
+                        </div>
+                    </div>
+
+                    <div class="post-activity">
+
+                        <div>
+                            <img src="images/user-1.png" alt="user" class="post-activity-user-icon">
+
+
+                            <img src="images/down-arrow.png" alt="user" class="post-activity-arrow-icon">
+
+
+
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png" alt="like">
+                            <span>Like</span>
+                        </div>
+
+                        <div class="post-activity-link">
+
+                            <img src="images/comment.png" alt="comment">
+                            <span>Comment</span>
+
+                        </div>
+                        <div class="post-activity-link">
+
+                            <img src="images/share.png" alt="share">
+                            <span>Share</span>
+                        </div>
+
+                        <div class="post-activity-link">
+                            <img src="images/send.png" alt="send">
+                            <span>Send</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post">
+                    <div class="post-author">
+                        <img src="images/user-4.png" alt="user">
+                        <div>
+                            <h1> Priyanka Pawar</h1>
+                            <small> Founder And CEO </small>
+                            <small>5 Hours Ago</small>
+
+                        </div>
+
+
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos quis optio magnam voluptatum commodi numquam praesentium qui laborum delectus ullam eaeum sunt in, esse corrupti officia optio!
+                    </p>
+                    <img src="images/post-image-2.png" alt="post" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png" alt="th">
+                            <img src="images/love.png" alt="th">
+                            <img src="images/clap.png" alt="th">
+                            <span class="liked-users">Vijay Dalvi And 75 Others</span>
+
+                        </div>
+                        <div>
+
+                            <span>33 Comments &middot; 50 Shares</span>
+
+                        </div>
+                    </div>
+
+                    <div class="post-activity">
+
+                        <div>
+                            <img src="images/user-1.png" alt="user" class="post-activity-user-icon">
+
+
+                            <img src="images/down-arrow.png" alt="user" class="post-activity-arrow-icon">
+
+
+
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png" alt="like">
+                            <span>Like</span>
+                        </div>
+
+                        <div class="post-activity-link">
+
+                            <img src="images/comment.png" alt="comment">
+                            <span>Comment</span>
+
+                        </div>
+                        <div class="post-activity-link">
+
+                            <img src="images/share.png" alt="share">
+                            <span>Share</span>
+                        </div>
+
+                        <div class="post-activity-link">
+                            <img src="images/send.png" alt="send">
+                            <span>Send</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post">
+                    <div class="post-author">
+                        <img src="images/user-5.png" alt="user">
+                        <div>
+                            <h1> Umesh Dalvi</h1>
+                            <small> Founder And CEO </small>
+                            <small>9 Hours Ago</small>
+
+                        </div>
+
+
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos quis optio magnam voluptatum commodi numquam praesentium qui laborum delectus ullam eaeum sunt in, esse corrupti officia optio!
+                    </p>
+                    <img src="images/post-image-3.png" alt="post" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png" alt="th">
+                            <img src="images/love.png" alt="th">
+                            <img src="images/clap.png" alt="th">
+                            <span class="liked-users">Vijay Dalvi And 75 Others</span>
+
+                        </div>
+                        <div>
+
+                            <span>33 Comments &middot; 50 Shares</span>
+
+                        </div>
+                    </div>
+
+                    <div class="post-activity">
+
+                        <div>
+                            <img src="images/user-1.png" alt="user" class="post-activity-user-icon">
+
+
+                            <img src="images/down-arrow.png" alt="user" class="post-activity-arrow-icon">
+
+
+
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png" alt="like">
+                            <span>Like</span>
+                        </div>
+
+                        <div class="post-activity-link">
+
+                            <img src="images/comment.png" alt="comment">
+                            <span>Comment</span>
+
+                        </div>
+                        <div class="post-activity-link">
+
+                            <img src="images/share.png" alt="share">
+                            <span>Share</span>
+                        </div>
+
+                        <div class="post-activity-link">
+                            <img src="images/send.png" alt="send">
+                            <span>Send</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="post">
+                    <div class="post-author">
+                        <img src="images/user-6.png" alt="user">
+                        <div>
+                            <h1> Vishal Dalvi</h1>
+                            <small> Founder And CEO </small>
+                            <small>10 Hours Ago</small>
+
+                        </div>
+
+
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos quis optio magnam voluptatum commodi numquam praesentium qui laborum delectus ullam eaeum sunt in, esse corrupti officia optio!
+                    </p>
+                    <img src="images/post-image-4.png" alt="post" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png" alt="th">
+                            <img src="images/love.png" alt="th">
+                            <img src="images/clap.png" alt="th">
+                            <span class="liked-users">Vijay Dalvi And 75 Others</span>
+
+                        </div>
+                        <div>
+
+                            <span>33 Comments &middot; 50 Shares</span>
+
+                        </div>
+                    </div>
+
+                    <div class="post-activity">
+
+                        <div>
+                            <img src="images/user-1.png" alt="user" class="post-activity-user-icon">
+
+
+                            <img src="images/down-arrow.png" alt="user" class="post-activity-arrow-icon">
+
+
+
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png" alt="like">
+                            <span>Like</span>
+                        </div>
+
+                        <div class="post-activity-link">
+
+                            <img src="images/comment.png" alt="comment">
+                            <span>Comment</span>
+
+                        </div>
+                        <div class="post-activity-link">
+
+                            <img src="images/share.png" alt="share">
+                            <span>Share</span>
+                        </div>
+
+                        <div class="post-activity-link">
+                            <img src="images/send.png" alt="send">
+                            <span>Send</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <!-- ----right--sidebar--- -->
+            <div class="right-sidebar">
+
+                <div class="siderbar-news">
+                    <img src="images/more.png" alt="more" class="info-icon">
+                    <h1>Trending News </h1>
+                    <a href="#">High Demand for Skilled Manpower</a>
+                    <span>1d ago &middot; 11230 readers</span>
+
+
+                    <a href="#">Careers growing horizontally too</a>
+                    <span>5d ago &middot; 1230 readers</span>
+
+                    <a href="#">Less work visa for US, more for UK</a>
+                    <span>10d ago &middot; 230 readers</span>
+
+                    <a href="#">More hiring=higher confidence?</a>
+                    <span>20d ago &middot; 112 readers</span>
+
+                    <a href="#">High Demand for Skilled Manpower</a>
+                    <span>30d ago &middot; 1130 readers</span>
+
+                    <a href="#">High Demand for Skilled Manpower</a>
+                    <span>50d ago &middot; 11230 readers</span>
+
+
+                    <a href="#" class="read-more-link">Read More</a>
+                </div>
+
+
+                <div class="sidebar-ad">
+                    <small>Ad</small>
+                    <p>Master the priciples of web design</p>
+                    <div>
+                        <img src="images/user-1.png" alt="user">
+                        <img src="images/mi-logo.png" alt="user">
+
+
+                    </div>
+                    <b>Brand and Demand in Xiaomi</b>
+                    <a href="#" class="ad-link">Learn More</a>
+
+                </div>
+
+                <div class="sidebar-useful-links">
+                    <a href="#">About</a>
+                    <a href="#">Accessiblity</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Get the App</a><br>
+                    <a href="#">More</a>
+                    <div class="copyright-msg">
+                        <img src="images/logo.png" alt="logo">
+                        <p>Linkedlnup &#169; 2023. All right reserved</p>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <p>Copyright 2023 Design & Develop By Vijay Dalvi</p>
+        </div>
+
+
+
+        <script>
+            let profileMenu = document.getElementById("profile-Menu");
+
+
+            function toggleMenu() {
+
+                profileMenu.classList.toggle("open-menu");
+
+
+            }
+        </script>
+
+        <script>
+            let sidebarActivity = document.getElementById("sidebarActivity");
+            let moreLink = document.getElementById("showMoreLink");
+
+            function toggleActivity() {
+
+                sidebarActivity.classList.toggle("open-activity");
+                if (sidebarActivity.classList.contains("open-activity")) {
+
+                    moreLink.innerHTML = " Show Less <b>-</b>";
+                } else {
+
+                    moreLink.innerHTML = " Show More <b>+</b>";
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
